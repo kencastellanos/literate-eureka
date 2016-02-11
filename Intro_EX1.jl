@@ -77,11 +77,11 @@ push!(b, 42)
 x1 = 42
 for i in 1:10
 	
-	x2 = x1 - (f(x1)/numerical_derivative(f, x1, 0.000001))
+	y2 = x1 - (f(x1)/numerical_derivative(f, x1, 0.000001))
 	
-	println(f(x2))
+	println(f(y2))
 	
-	x1 = x2
+	x1 = y2
 
 end
 
